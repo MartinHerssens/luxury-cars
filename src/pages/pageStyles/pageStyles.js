@@ -163,11 +163,11 @@ export const Wrapper = styled.div`
 export const Artist = styled(Link)`
   display: flex;
   position: relative;
-  width: 22vw;
-  height: 22vw;
-  margin: 2vw;
+  width: 25vw;
+  height: 25vw;
+  margin: 0.5vw;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 
   @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
     width: 90vw;
@@ -204,7 +204,7 @@ export const Artist = styled(Link)`
     align-items: center;
     padding: 1rem;
     background-color: ${COLORS.BLACK + "c0"};
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     p {
       text-transform: uppercase;

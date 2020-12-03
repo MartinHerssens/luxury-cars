@@ -19,8 +19,8 @@ export const Wrapper = styled.div`
 
     .artist-image {
       position: relative;
-      width: 40vw;
-      height: 40vw;
+      width: 80vw;
+      height: 30vw;
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         height: 90vw;
@@ -36,11 +36,11 @@ export const Wrapper = styled.div`
         flex-direction: column;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        color: ${COLORS.SECONDARY};
+        color: ${COLORS.WHITE};
         font-family: ${FONT_FAMILIES.TITLE};
         text-transform: uppercase;
         background-color: ${COLORS.GREY};
-        border-right: solid 15px ${COLORS.SECONDARY};
+        border-right: solid 15px ${COLORS.TERTIARY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           color: ${COLORS.PRIMARY};
@@ -66,8 +66,8 @@ export const Wrapper = styled.div`
       h2 {
         font-family: ${FONT_FAMILIES.TITLE};
         text-transform: uppercase;
-        font-size: 4rem;
-        border-bottom: ${COLORS.WHITE} solid 6px;
+        font-size: 3rem;
+        border-bottom: ${COLORS.TERTIARY} solid 6px;
         padding-bottom: 1rem;
         margin-left: auto;
         margin-bottom: 0.5rem;
@@ -100,8 +100,8 @@ export const Wrapper = styled.div`
       }
 
       .description {
-        font-size: 1.2rem;
-        color: ${COLORS.TERTIARY};
+        font-size: 1.1rem;
+        color: ${COLORS.WHITE};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1rem;
@@ -111,6 +111,7 @@ export const Wrapper = styled.div`
       .info {
         font-family: 2rem;
         text-transform: uppercase;
+        color: ${COLORS.TERTIARY};
       }
     }
   }
@@ -120,16 +121,18 @@ export const Wrapper = styled.div`
     width: 100%;
     justify-content: center;
     margin-top: 2rem;
-
     @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
       flex-direction: column;
     }
 
     .artist-picture {
-      width: 28.5vw;
-      height: 57vw;
-      margin: 0 1vw;
-
+      width: 80vw;
+      height: 20vw;
+      margin: 0 1vw 02vw;
+     
+  &:hover {
+    transform: scale(1.12); 
+    transition: transform 0.8s ease-in-out;
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         width: 90vw;
         height: 160vw;
