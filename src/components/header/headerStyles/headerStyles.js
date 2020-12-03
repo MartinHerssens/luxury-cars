@@ -54,6 +54,8 @@ export const MenuList = styled.ul`
 
     a:hover {
       color: ${COLORS.TERTIARY};
+      font-weight:900;
+      
     }
   }
 

@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
 
       p {
         color: white;
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-align: center;
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
@@ -82,7 +82,7 @@ export const Wrapper = styled.div`
 
     p {
       width: 70%;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       color: ${COLORS.WHITE};
       text-align: center;
       line-height: 2rem;

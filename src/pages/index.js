@@ -78,7 +78,7 @@ const IndexPage = () => {
           <BottomEdgeUp color={COLORS.BLACK}/>
         </div>
         <div className= "artists">
-          <h2>Our Cars</h2>
+          <h2>fastest Cars</h2>
           <div className="artist-items">
             {homePageFeaturedCars.map(({car, slug})=>(
               <Artist to={`/${slug}`}>
