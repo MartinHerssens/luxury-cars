@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
       transform: translate(-50%, -50%);
       width: 60%;
       padding: 1rem;
-      background-color: ${COLORS.PRIMARY + "d0"};
+      background-color: ${COLORS.BLACK + "d0"};
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         top: 120px;
@@ -43,13 +43,13 @@ export const Wrapper = styled.div`
 
       .header-title {
         font-family: ${FONT_FAMILIES.TITLE};
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 600;
-        color: white;
+        color: ${COLORS.WHITE};
         text-transform: uppercase;
         margin: auto;
-        border-bottom: solid 5px white;
-        margin-bottom: 1rem;
+        border-bottom: solid 3px ${COLORS.TERTIARY} ;
+        margin-bottom: 0.5rem;
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1.5rem;
@@ -83,7 +83,7 @@ export const Wrapper = styled.div`
     p {
       width: 70%;
       font-size: 1.3rem;
-      color: ${COLORS.TERTIARY};
+      color: ${COLORS.WHITE};
       text-align: center;
       line-height: 2rem;
       margin: auto;
@@ -133,7 +133,7 @@ export const Wrapper = styled.div`
     align-items: center;
     width: 100%;
     padding: 2rem 5%;
-    background-color: ${({ artistsColor = COLORS.PRIMARY }) =>
+    background-color: ${({ artistsColor = COLORS.GREY }) =>
       `${artistsColor}`};
 
     h2 {
@@ -183,7 +183,12 @@ export const Artist = styled(Link)`
       background-color: ${COLORS.TERTIARY + "c0"};
 
       p {
-        color: ${COLORS.BLACK};
+        color: ${COLORS.WHITE};
+        font-weight: 600;
+      }
+      p:nth-child(2) {
+        color: #000000;
+        font-weight:600;
       }
     }
   }
@@ -204,13 +209,14 @@ export const Artist = styled(Link)`
     p {
       text-transform: uppercase;
       font-size: 1.3rem;
-      font-weight: 600;
-      color: white;
+      font-weight: 500;
+      color: ${COLORS.WHITE};
       margin: 0;
     }
 
     p:nth-child(2) {
-      color: ${COLORS.SECONDARY};
+      color: ${COLORS.TERTIARY};
+      font-weight: 600;
 
       margin-top: 0.3rem;
     }
@@ -243,7 +249,7 @@ export const BottomEdgeUp = styled.div`
   &:after {
     content: "";
     display: block;
-    border-bottom: ${({ color }) => `100px solid ${color}`};
+   // border-bottom: ${({ color }) => `100px solid ${color}`};
     border-left: 100vw solid transparent;
 
     transform: translateY(140px) scale(1.05);
