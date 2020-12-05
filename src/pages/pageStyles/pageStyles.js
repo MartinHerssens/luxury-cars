@@ -170,8 +170,8 @@ export const Artist = styled(Link)`
   transition: transform 0.5s ease-in-out;
 
   @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-    width: 90vw;
-    height: 90vw;
+    width: 80vw;
+    height: 50vw;
     margin: 2vw 0;
   }
 

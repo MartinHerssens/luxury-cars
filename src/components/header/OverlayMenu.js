@@ -1,7 +1,7 @@
 import React from 'react'
 import {useStaticQuery, graphql, Link} from 'gatsby'
 import {OverlayWrapper, Image, CloseButton, MenuList} from "./headerStyles/headerStyles"
-const Overlaymenu = (handleOverlayMenu, menuOpen) => {
+const Overlaymenu = ({handleOverlayMenu, menuOpen}) => {
     const {
         logo,
         wpcontent: {
