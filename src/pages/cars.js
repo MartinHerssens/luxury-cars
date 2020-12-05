@@ -62,7 +62,7 @@ const CarsPage = (props)=> {
     `)
     return (
         <Layout>
-            <SEO tit="cars"/>
+            <SEO title="cars"/>
         <Wrapper artistsColor= {COLORS.GREY} descriptionColor={COLORS.BLACK}>
             <div className="banner">
            <Image fluid={carsPagePicture.imageFile.childImageSharp.fluid} alt={carsPagePicture.altText}/> 

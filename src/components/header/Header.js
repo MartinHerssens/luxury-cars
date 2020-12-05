@@ -30,12 +30,14 @@ const Header = ({ siteTitle }) => {
     }
   }
   `)
-  return <HeaderWrapper>
+  return (
+  <HeaderWrapper>
     <Link to="/">
       <Image alt="logo luxury cars" fixed={logo.childImageSharp.fixed}/>
     </Link>
     <Menu menuItems = {menuItems.edges} />
   </HeaderWrapper>
+  )
 }
 
 
