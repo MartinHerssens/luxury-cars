@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import {Wrapper, Image, Artist, BottomEdgeDown, BottomEdgeUp} from "./pageStyles/pageStyles"
+import {Wrapper, Image, Artist, BottomEdgeDown, BottomEdgeUp} from "../pageStyles/pageStyles"
 import {COLORS} from "../constants"
 
 const CarsPage = (props)=> {
@@ -26,7 +26,7 @@ const CarsPage = (props)=> {
                 sourceUrl
                     imageFile {
                         childImageSharp {
-                        fluid(quality:100){
+                        fluid(quality:75){
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
@@ -46,7 +46,7 @@ const CarsPage = (props)=> {
                     sourceUrl
                     imageFile {
                       childImageSharp {
-                        fluid(quality:100){
+                        fluid(quality:50){
                           ...GatsbyImageSharpFluid_withWebp
                         }
                       }

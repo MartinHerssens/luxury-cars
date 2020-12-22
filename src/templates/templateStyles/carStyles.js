@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
 import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
 
 export const Wrapper = styled.div`
@@ -23,9 +22,9 @@ export const Wrapper = styled.div`
       height: 30vw;
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-        height: 90vw;
+        height: 40vw;
         width: 90vw;
-        border-bottom: solid 15px ${COLORS.PRIMARY};
+      //border-bottom: solid 15px ${COLORS.GREY};
       }
 
       .roles {
@@ -43,8 +42,8 @@ export const Wrapper = styled.div`
         border-right: solid 15px ${COLORS.TERTIARY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-          color: ${COLORS.PRIMARY};
-          border-right: solid 5px ${COLORS.PRIMARY};
+          color: ${COLORS.WHITE};
+          border-right: solid 5px ${COLORS.TERTIARY};
         }
 
         .role {
@@ -129,15 +128,14 @@ export const Wrapper = styled.div`
       width: 80vw;
       height: 20vw;
       margin: 0 1vw 02vw;
+      @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
+        width: 90vw;
+        height: 40vw;
+      }
      
   &:hover {
     transform: scale(1.12); 
     transition: transform 0.8s ease-in-out;
-      @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-        width: 90vw;
-        height: 160vw;
-        margin: 2vw auto;
-      }
     }
   }
 `

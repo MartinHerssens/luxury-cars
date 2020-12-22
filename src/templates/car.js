@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link, useStaticQuery, graphql } from "gatsby"
+import {graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import {Wrapper, Image, Artist, BottomEdgeDown, BottomEdgeUp} from "./templateStyles/carStyles"
-import {COLORS} from "../constants"
+import {Wrapper, Image} from "./templateStyles/carStyles"
+
 
 const CarTemplate = ({
   data: {
@@ -107,7 +107,7 @@ graphql`
               sourceUrl
               imageFile {
                 childImageSharp {
-                  fluid(quality: 75) {
+                  fluid(quality: 50) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
@@ -118,7 +118,7 @@ graphql`
               sourceUrl
               imageFile {
                 childImageSharp {
-                  fluid(quality: 75) {
+                  fluid(quality: 50) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
@@ -129,7 +129,7 @@ graphql`
               sourceUrl
               imageFile {
                 childImageSharp {
-                  fluid(quality: 75) {
+                  fluid(quality: 50) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }

@@ -5,6 +5,7 @@ module.exports = {
     author: `Martin Herssens`,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     {
 
       resolve: "gatsby-source-graphql",
